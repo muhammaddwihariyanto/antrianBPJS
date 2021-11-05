@@ -16,17 +16,17 @@
             <!-- /.content-header -->
             <br><br><br>
             <!-- Main content -->
-            <!-- <font color="grey"> -->
-            <h1 style="text-align: center;"> <strong>
-                    DASHBOARD
-                </strong></h1>
-            <!-- </font> -->
-            <br>
-            <!-- <font color="white"> -->
-            <h3 style="text-align: center;">
-                Faskes Tingkat I "RS DEA"
-            </h3>
-            <!-- </font> -->
+            <font color="white">
+                <h1 style="text-align: center;"> <strong>
+                        DASHBOARD
+                    </strong></h1>
+                <!-- </font> -->
+                <br>
+                <!-- <font color="white"> -->
+                <h3 style="text-align: center;">
+                    Faskes Tingkat I "RS DEA"
+                </h3>
+            </font>
 
             <br>
             <br>
@@ -185,7 +185,7 @@
 
 
                                 </div>
-                                <a href="/console/home" class="small-box-footer">
+                                <a href="/display/index" class="small-box-footer">
                                     <font color="white"> Masuk <i class="fas fa-arrow-circle-right"></i> </font>
                                 </a>
                             </div>
@@ -222,7 +222,7 @@
 
 
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="/administrator/home" class="small-box-footer">
                                     <font color="white"> Masuk <i class="fas fa-arrow-circle-right"></i> </font>
                                 </a>
                             </div>

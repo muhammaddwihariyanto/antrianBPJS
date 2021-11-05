@@ -28,5 +28,15 @@ Route::get('/home', 'Auth\AuthController@home')->name('home');
 Route::get('console/home','ConsoleController@consolehome')->name('consolehome');
 Route::get('console/menu/bpjs','ConsoleController@consolemenubpjs')->name('consolemenubpjs');
 
+Route::get('console/menu/nonbpjs','ConsoleController@consolemenunonbpjs')->name('consolemenunonbpjs');
+
 ///////////////////// Petugas Panggil \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Route::get('petugaspanggil/index','PetugasPanggilController@index')->name('index');
+
+////////////////////Administrator \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Route::get('administrator/home','AdministratorController@administratorhome')->name('administratorhome');
+Route::get('administrator/video','AdministratorController@administratorvideo')->name('administratorvideo');
+
+
+///////////////// Display \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Route::get('display/index','DisplayController@index')->name('displayindex');

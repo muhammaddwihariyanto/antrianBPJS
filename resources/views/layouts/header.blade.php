@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMRS-RSDEA</title>
+    <title>ANTREAN BPJS-RSDEA</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -59,17 +59,18 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="content">
+    <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-dark bg-blue">
+
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="{{url('home')}}" class="nav-link">Dashboard</a>
+                    <a href="{{url('home')}}" class="nav-link"><strong> BPJS Kesehatan</strong></a>
                 </li>
                 <!-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="{{url('cariPasien')}}" class="nav-link">Pencarian Pasien BPJS</a>
@@ -90,6 +91,7 @@
                     </div>
                 </li>
             </ul>
+
         </nav>
         <!-- /.navbar -->
     </div>

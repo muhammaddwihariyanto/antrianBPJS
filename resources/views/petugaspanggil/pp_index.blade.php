@@ -8,199 +8,225 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Administrator</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <!-- {{ date_default_timezone_set('Asia/Jakarta')}} -->
-                                <h3> {{ date('d/m/Y') }} at </h3>
-                                <h3 id="jam"></h3>
-                                :<h3 id="menit"></h3>
-                                :<h3 id="detik"></h3>
-                            </ol>
-                        </div>
+            <section class="content">
+                <div class="card" style="padding: 0%;">
+                    <div class="card-header">
+                        <div class="container-fluid">
+                            <div class="row mb-0">
+                                <div class="col-sm-6">
+                                    <h3>Administrator</h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ol class="breadcrumb float-sm-right mb-0" style="background-color: white;">
+                                        <!-- {{ date_default_timezone_set('Asia/Jakarta')}} -->
+                                        <h5>Tanggal : {{ date('d/m/Y') }} Jam : </h5>
+                                        <h5 id="jam"></h5>
+                                        :<h5 id="menit"></h5>
+                                        :<h5 id="detik"></h5>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div><!-- /.container-fluid -->
                     </div>
-                </div><!-- /.container-fluid -->
+                </div>
             </section>
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <section class="content">
-                <div class="container-wrapper">
-                    <div class="row">
-                        <div class="col-md-5">
+            <div class="card-body">
+                <section class="content">
+                    <div class="container-wrapper">
+                        <div class="row">
+                            <div class="col-md-6">
 
-                            <!-- Profile Image -->
+                                <!-- Profile Image -->
 
-                            <!-- /.card -->
+                                <!-- /.card -->
 
-                            <!-- About Me Box -->
-                            <div class="card card-primary">
-                                <div class="card-header ">
-                                    <div class="text-center">
-                                        <h3 class="card-title">NOMOR ANTREAN</h3>
-                                    </div>
-                                </div>
+                                <!-- About Me Box -->
+                                <div class="card card-teal mb-0">
+                                    <div class="card-header mb-0" style="text-align: center;">
 
-                                <!-- /.card-header -->
-                                <div class="card mt-3">
-                                    <div class="card-body">
-
-                                        <div class="text-center">
-                                            <p style="font-size: 150px;" style="color: dimgray;">A1-2</p>
-                                        </div>
+                                        <h5 class="card-title-center mb-0">NOMOR ANTREAN</h5>
 
                                     </div>
-                                </div>
-                                <div class="card mt-1" padding="0.5px">
-                                    <div class="card-body">
 
-                                        <div class="text-center">
-                                            <h5>Dokter</h5>
+                                    <!-- /.card-header -->
+                                    <div class="card mt-3">
+                                        <div class="card-body">
 
-                                            <label for="">dr. DJOKO TJAHJONO WAHJUTOMO, Sp.PD </label>
-
+                                            <div class="text-center">
+                                                <p style="font-size: 150px;" style="color: dimgray;">A1-2</p>
+                                            </div>
 
                                         </div>
-
                                     </div>
-                                </div>
-                                <div class="card mt-1" padding="0.5px">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="card">
+                                    <div class="card mt-1" padding="0.5px">
+                                        <div class="card-body mb-0 mt-0">
+
+                                            <div class="text-center">
+                                                <h5>Dokter</h5>
+
+                                                <label for="">dr. DJOKO TJAHJONO WAHJUTOMO, Sp.PD </label>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card mt-1" padding="0.5px">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+
                                                 <div class="card-body">
                                                     <div class="text-center">
                                                         <h5>Poli Tujuan</h5>
-                                                        <br>
+
                                                         <label for="">POLI PENYAKIT DALAM</label>
                                                     </div>
                                                 </div>
+
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="card">
+                                            <div class="col-sm-6">
+
                                                 <div class="card-body">
                                                     <div class="text-center">
                                                         <h5>No Rekam
                                                             Medis</h5>
-                                                        <br>
+
                                                         <label for=""> -- --</label>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card mt-1" padding="0.5px">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="card">
+                                    <div class="card mt-1" padding="0.5px">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+
                                                 <div class="card-body">
                                                     <div class="text-center">
                                                         <h5>Waktu Daftar</h5>
-                                                        <br>
+
                                                         <label for="">-- --</label>
                                                     </div>
                                                 </div>
+
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="card">
+                                            <div class="col-sm-6">
+
                                                 <div class="card-body">
                                                     <div class="text-center">
                                                         <h5>Waktu Panggil</h5>
-                                                        <br>
+
                                                         <label for=""> -- --</label>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+
+                            <!-- /.col -->
+                            <div class="col-md-5">
+
+                                <!-- /.card -->
+
+                                <div class="card ">
+
+                                    <div class="card-body ">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="normal">
+                                            <label class="form-check-label" for="inlineRadio1">Normal</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="prioritas">
+                                            <label class="form-check-label" for="inlineRadio2">Prioritas</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="Skip">
+                                            <label class="form-check-label" for="inlineRadio2">Skip</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select name="nama_poli" id="poli" class="form-control"> --pilih
+                                                    Poli--
+                                                    @foreach ($mdpoli as $poli)
+                                                    <option value="{{ $poli->NamaPoli }}">{{ $poli -> NamaPoli }}
+                                                    </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-success">Panggil
+                                                Next</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select name="nama_dokter" id="dokter" class="form-control">
+                                                    @foreach ($mddokter as $dokter)
+                                                    <option value="{{ $dokter->NamaDokter }}">
+                                                        {{ $dokter -> NamaDokter }}
+                                                    </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.card-body -->
+                                <div class="card-group">
+                                    <div class="card ">
+
+                                        <div class="card-body ">
+                                            <div class="text-center">
+                                                <h5>Nama Poli</h5>
+                                                <br>
+                                                <label for=""> Nama Pasien</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ">
+
+                                        <div class="card-body ">
+                                            <div class="text-center">
+                                                <label for=""> 08:00 - 12:00</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ">
+
+                                        <div class="card-body ">
+                                            <div class="text-center">
+                                                <label for=""> Sisa 2/2 Antrean</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
                             </div>
-                            <!-- /.card -->
                         </div>
-
-                        <!-- /.col -->
-                        <div class="col-md-6">
-
-                            <!-- /.card -->
-
-                            <div class="card ">
-
-                                <div class="card-body ">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <select name="nama_poli" id="poli" class="form-control"> --pilih Poli--
-                                                @foreach ($mdpoli as $poli)
-                                                <option value="{{ $poli->NamaPoli }}">{{ $poli -> NamaPoli }}
-                                                </option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-success">Panggil Next</button>
-                                    </div>
-                                </div>
-
-                                <div class="card-body ">
-                                    <div class="col-md-6">
-                                        <select name="nama_dokter" id="dokter" class="form-control">
-                                            @foreach ($mddokter as $dokter)
-                                            <option value="{{ $dokter->NamaDokter }}">
-                                                {{ $dokter -> NamaDokter }}
-                                            </option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-group">
-                                <div class="card ">
-
-                                    <div class="card-body ">
-                                        <div class="text-center">
-                                            <h5>Nama Poli</h5>
-                                            <br>
-                                            <label for=""> Nama Pasien</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card ">
-
-                                    <div class="card-body ">
-                                        <div class="text-center">
-                                            <label for=""> 08:00 - 12:00</label>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card ">
-
-                                    <div class="card-body ">
-                                        <div class="text-center">
-                                            <label for=""> Sisa 2/2 Antrean</label>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.card -->
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </section>
+                        <!-- /.row -->
+                    </div><!-- /.container-fluid -->
+                </section>
+            </div>
             <!-- /.content --
         </div>
-        <!-- /.content-wrapper -->
+       
 
-            <!-- Control Sidebar -->
+                <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark">
                 <!-- Control sidebar content goes here -->
             </aside>

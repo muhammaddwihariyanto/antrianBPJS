@@ -15,18 +15,20 @@
 
             <div class="content">
                 <div class="container">
-                    <h1> <strong>
-                            Selamat Datang
-                        </strong></h1>
+                    <font color="white">
+                        <h1> <strong>
+                                Selamat Datang
+                            </strong></h1>
 
 
-                    <h3>
-                        di Faskes Tingkat I "RS DEA"
-                    </h3>
-                    <br>
-                    <br>
-                    <br>
-                    <h5>Silahkan pilih menu dibawah ini !</h5>
+                        <h3>
+                            di Faskes Tingkat I "RS DEA"
+                        </h3>
+                        <br>
+                        <br>
+                        <br>
+                        <h5>Silahkan pilih menu dibawah ini !</h5>
+                    </font>
                     <!-- <div class="card w-25 bg-primary">
                         <div class="card-body">
                             <h5 style="text-align: center;">Console Box<sup style="font-size: 20px"></sup></h5>
@@ -66,7 +68,7 @@
                                     <i class="fas fa-tv"></i>
                                 </div> -->
 
-                                <a href="#" class="small-box-footer">
+                                <a href="/console/menu/nonbpjs" class="small-box-footer">
                                     <font color="white">Peserta Non BPJS <i class="fas fa-arrow-circle-right"></i>
                                     </font>
                                 </a>

@@ -43,37 +43,42 @@
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
-                        <div class="col-md-8">
-                            <div class="card card-primary card-outline">
+                        <div class="col-md-5">
+                            <!-- <div class="card card-primary card-outline">
                                 <div class="card-header">
                                     <h5 class="m-0">Buat Daftar Antrian</h5>
-                                </div>
-                                <div class="container-fluid">
+                                </div> -->
+                            <div class="container-fluid">
 
-                                    <form action="#" method="post">
-                                        {{ csrf_field() }}
-                                        <br>
-                                        <div class="wrap-input100 validate-input m-b-18">
-                                            <div class="row mb-4">
-                                                <div class="input-group">
-                                                    <input type="number" name="id " class=" form-control"
-                                                        placeholder=" NIK / NO KARTU BPJS">
-                                                </div>
+                                <form action="#" method="post">
+                                    {{ csrf_field() }}
+                                    <br>
+                                    <div class="wrap-input50 validate-input m-b-18">
+                                        <div class="row mb-3">
+                                            <div class="input-group">
+                                                <input type="number" name="id " class=" form-control"
+                                                    placeholder=" NIK / NO KARTU BPJS">
                                             </div>
                                         </div>
-                                        <div class="wrap-input100 validate-input m-b-18">
-
+                                    </div>
+                                    <div class="wrap-input50 validate-input m-b-18">
+                                        <div class="row mb-3">
                                             <select name="nama_poli" id="poli" class="form-control"> --pilih Poli--
+
+                                                <option value="">-- Pilih Poli --</option>
                                                 @foreach ($mdpoli as $poli)
                                                 <option value="{{ $poli->NamaPoli }}">{{ $poli -> NamaPoli }}
                                                 </option>
                                                 @endforeach
                                             </select>
                                         </div>
-                                        <br>
-                                        <div class="wrap-input100 validate-input m-b-18">
+                                    </div>
 
+                                    <div class="wrap-input50 validate-input m-b-18">
+                                        <div class="row mb-3">
                                             <select name="nama_dokter" id="dokter" class="form-control">
+
+                                                <option value="">-- Pilih Dokter --</option>
                                                 @foreach ($mddokter as $dokter)
                                                 <option value="{{ $dokter->NamaDokter }}">
                                                     {{ $dokter -> NamaDokter }}
@@ -81,31 +86,36 @@
                                                 @endforeach
                                             </select>
                                         </div>
-                                        <br>
+                                    </div>
+                                    <font color="white">
                                         * NIK harus 16 digit.
                                         <br>
                                         * NO PESERTA harus 13 digit.
                                         <br>
                                         <br>
-                                        <input class="btn btn-success" type="submit" value="Daftar Antri">
+                                    </font>
+                                    <div class="wrap-input50 validate-input m-b-18">
+
+                                        <input class="btn btn-warning" type="submit" value="Daftar Antri">
 
                                         <a class="btn btn-primary" href="/console/home">
                                             Kembali</a>
-                                    </form>
+                                    </div>
+                                </form>
 
 
-                                </div>
                             </div>
-                            <!-- /.col -->
                         </div>
-                        <!-- /.row -->
-                    </div><!-- /.container-fluid -->
-                </div>
-            </section>
-            <!-- /.content -->
-
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div><!-- /.container-fluid -->
         </div>
-        @include('layouts.footer_main')
+        </section>
+        <!-- /.content -->
+
+    </div>
+    @include('layouts.footer_main')
     </div>
 
     <!-- ./wrapper -->
@@ -165,7 +175,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js">
     </script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     $(document).ready(function() {
         $("#poli").select2();
     });
@@ -174,6 +184,6 @@
     $(document).ready(function() {
         $("#dokter").select2();
     });
-    </script>
+    </script> -->
 
 </body>

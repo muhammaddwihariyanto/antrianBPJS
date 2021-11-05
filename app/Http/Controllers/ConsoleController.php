@@ -28,6 +28,17 @@ class ConsoleController extends Controller
         	
         ]);
     }
+    public function consolemenunonbpjs()
+    {
+        $poli =DB::table('tbpoli')->get();
+        $mddokter = DB::table('tbdaftardokter')->get();
+    
+        return view('console_box.non_bpjs.menu_nonbpjs',[
+            'mdpoli' => $poli,
+        	'mddokter' => $mddokter,
+        	
+        ]);
+    }
     public function index()
     {
         //
