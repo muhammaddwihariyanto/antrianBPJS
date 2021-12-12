@@ -65,14 +65,24 @@ class AuthController extends Controller
 
     public function home()
     {
+        $peserta_bpjs = DB::table('peserta_bpjs')->get();
+        $peserta_nonbpjs = DB::table('peserta_nonbpjs')->get();
         $poli =DB::table('tbpoli')->get();
-        $mddokter = DB::table('tbdaftardokter')->get();
-    
-        
+        $mddokter = DB::table('tabel_dokter')->get();
+        $petugas_panggil = DB::table('petugas_panggil')->get();
+        $loket = DB::table('master_loket')->select('master_loket.nama')->get();
+        $aktor = DB::table('master_aktor')->get();
+        $selectedLoket = DB::table('master_loket')->first()->nama;
+        //dd($selectedLoket);
       return view('home',[
         'mdpoli' => $poli,
         'mddokter' => $mddokter,
-        
+        'selectedLoket' => $selectedLoket,
+        'peserta_bpjs' => $peserta_bpjs,
+        'peserta_nonbpjs' => $peserta_nonbpjs,
+        'petugas_panggil' => $petugas_panggil,
+        'petugas' => $aktor,
+        'loket' => $loket,
     ]);
     }
     /**

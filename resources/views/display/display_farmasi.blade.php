@@ -86,42 +86,7 @@
                                   
                                  
                                 </div>
-                                <div class="col">
                                 
-                                    <div class="card-body">
-                                        <div class=" bg-success mb-3"  style="width: 25rem;border-radius: 10px; box-shadow: 6px 8px 4px #2F4F4F; border: 2px solid white;">
-
-                                            <div class="card-header" style="text-align: center; ">
-                                                <h5 style="font-size: 150px;" class="card-title-center"> <strong>0</strong>
-                                                </h5>
-                                                <br>
-                                                <h5 style="font-size: 30px;" text="bold;" class="card-title-center"> <strong>
-                                                        Loket 2 </strong></h5>
-                                                <br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                                 
-                                </div>
-                                <div class="col">
-                                
-                                    <div class="card-body">
-                                        <div class=" bg-success mb-3"  style="width: 25rem;border-radius: 10px; box-shadow: 6px 8px 4px #2F4F4F; border: 2px solid white;">
-
-                                            <div class="card-header" style="text-align: center; ">
-                                                <h5 style="font-size: 150px;" class="card-title-center"> <strong>0</strong>
-                                                </h5>
-                                                <br>
-                                                <h5 style="font-size: 30px;" text="bold;" class="card-title-center"> <strong>
-                                                        Loket 3 </strong></h5>
-                                                <br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                                 
-                                </div>
                               </div>
                             <!-- /.col -->
                             

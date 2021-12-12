@@ -2,14 +2,21 @@
 
 <body class="hold-transition layout-top-nav">
     <div class="wrapper">
-        @include('layouts.navbar_main')
+      
         <!-- Content Wrapper. Contains page content -->
 
-        <div class="content-wrapper" style="background-color:#20B2AA;">
+        <div class="content-wrapper" style=" background-image: linear-gradient(to right, #20B2AA, #008B8B);">
             <!-- Content Header (Page header) -->
+            <div class="container-fluid">
+                <div class="col-sm-11 " >
+                    <a class="btn btn-primary plus float-right  mt-4" style="border: 2px solid white; background-color:#008B8B; " href="{{url('/console/menu/pesertalama')}}">
+                       <strong> Kembali </strong></a>
+                </div>
+                </div>
 
             <!-- /.content-header -->
             <br><br><br>
+            <br> <br>
             <!-- Main content -->
             <!-- Main content -->
             <section class="content">
@@ -22,12 +29,12 @@
                             <div class="card-body box-profile">
                                 <div class="text-center">
                                     <img class="img-fluid img-circle" width="250px" height="250px"
-                                        src="{{url('')}}/bower_components/admin-lte/dist/img/avatar5.png"
+                                        src="{{url('')}}/bower_components/admin-lte/dist/img/male.png"
                                         alt="User profile picture">
                                 </div>
                                 <font color="white">
-                                    <h3 class="profile-username text-center" style="font-size:30px;"> <strong>BUKAN
-                                            PESERTA</strong> </h3>
+                                    <h3 class="profile-username text-center" style="font-size:30px;"> <strong>
+                                            PESERTA UMUM</strong> </h3>
                                 </font>
 
 
@@ -50,20 +57,20 @@
                                 </div> -->
                             <div class="container-fluid">
 
-                                <form action="#" method="post">
+                                <form action="{{route('daftarpasiennonbpjs')}}" method="post">
                                     {{ csrf_field() }}
                                     <br>
                                     <div class="wrap-input50 validate-input m-b-18">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            <input class="form-check-input" type="radio" name="option"
                                                 id="inlineRadio1" value="NIK">
                                             <font color="white">
                                                 <label class="form-check-label" for="inlineRadio1">NIK</label>
                                             </font>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio2" value="No_RM">
+                                            <input class="form-check-input" type="radio" name="option"
+                                                id="inlineRadio2" value="NOMOR REKAM MEDIS">
                                             <font color="white">
                                                 <label class="form-check-label" for="inlineRadio2">NOMOR REKAM
                                                     MEDIS</label>
@@ -73,32 +80,29 @@
                                     <div class="wrap-input50 validate-input m-b-18">
                                         <div class="row mb-3">
                                             <div class="input-group">
-                                                <input type="number" name="id " class=" form-control"
+                                                <input type="number" name="nik_norm" class=" form-control"
                                                     placeholder=" NIK / NO KARTU BPJS">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="wrap-input50 validate-input m-b-18">
-                                        <div class="row mb-3">
-                                            <select name="nama_poli" id="poli" class="form-control"> --pilih Poli--
-
-                                                <option value="">-- Pilih Poli --</option>
+                                    <div class="wrap-input100 validate-input m-b-18">
+                                        <div class="row mb-4">
+                                            <select style="height: 38px;" name="poli" id="poli"
+                                                class="form-control"> --pilih Poli--
                                                 @foreach ($mdpoli as $poli)
-                                                <option value="{{ $poli->NamaPoli }}">{{ $poli -> NamaPoli }}
+                                                <option value="{{ $poli->NamaPoli }}">{{ $poli ->NamaPoli }}
                                                 </option>
                                                 @endforeach
                                             </select>
                                         </div>
                                     </div>
 
-                                    <div class="wrap-input50 validate-input m-b-18">
-                                        <div class="row mb-3">
-                                            <select name="nama_dokter" id="dokter" class="form-control">
-
-                                                <option value="">-- Pilih Dokter --</option>
+                                    <div class="wrap-input100 validate-input m-b-18">
+                                        <div class="row mb-4">
+                                            <select name="dokter" id="dokter" class="form-control">
                                                 @foreach ($mddokter as $dokter)
-                                                <option value="{{ $dokter->NamaDokter }}">
-                                                    {{ $dokter -> NamaDokter }}
+                                                <option value="{{ $dokter->nama }}">
+                                                    {{ $dokter ->nama }}
                                                 </option>
                                                 @endforeach
                                             </select>
@@ -111,10 +115,9 @@
                                     <br>
                                     <div class="wrap-input50 validate-input m-b-18">
 
-                                        <input class="btn btn-warning" type="submit" value="Daftar Antri">
+                                        <input class="btn btn-warning" type="submit" value="Daftar Antri" style="border: 1px solid white; background-color:orange; text-color:white ">
 
-                                        <a class="btn btn-primary" href="/console/home">
-                                            Kembali</a>
+                                       
                                     </div>
                                 </form>
 
@@ -129,9 +132,6 @@
         </section>
         <!-- /.content -->
 
-    </div>
-    @include('layouts.footer_main')
-    </div>
 
     <!-- ./wrapper -->
 
@@ -190,7 +190,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js">
     </script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $("#poli").select2();
     });
@@ -199,6 +199,6 @@
     $(document).ready(function() {
         $("#dokter").select2();
     });
-    </script> -->
+    </script>
 
 </body>

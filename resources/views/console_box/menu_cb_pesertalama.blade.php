@@ -60,14 +60,14 @@
 
                     <div class="row">
 
-                        <div class="col-lg-5 col-7">
+                        <div class="col-lg-4 col-6">
                             <!-- small box -->
                             <div class="small-box  item kioskmenu" style="text-align: center;margin: 0px; background-color:#f05050;   box-shadow: 6px 8px 4px #2F4F4F;">
                                 <div class="inner">
                                     <font color="white">
-                                        <h1 style="text-align: center;margin: 0px; font-size: 63px"><strong> Peserta Baru </strong>
+                                        <h1 style="text-align: center;margin: 0px; font-size: 63px"><strong> BPJS </strong>
                                         </h1>
-                                        <a href="{{url('console/menu/admisi_poli')}}" style="box-shadow: grey; font-size: 14px;"><font color="white">Peserta Yang Belum Memiliki Rekam Medis </font></a>
+                                        <a href="{{url('/console/menu/bpjs')}}" style="box-shadow: grey; font-size: 14px;"><font color="white">Peserta BPJS </font></a>
                                     </font>
                                    
                                 </div>
@@ -78,15 +78,15 @@
                               
                             </div>
                         </div>
-                        <div class="col-lg-5 col-7">
+                        <div class="col-lg-4 col-6">
                             <!-- small box -->
-                            <div class="small-box " style="text-align: center; background-color:#7266ba; box-shadow: 6px 8px 8px #2F4F4F;">
+                            <div class="small-box " style="text-align: center; background-color:#fad733; box-shadow: 6px 8px 8px #2F4F4F;">
                                 <div class="inner">
                                     <font color="white">
-                                        <h1 style="text-align: center;margin: 0px; font-size: 63px"><strong> Peserta Lama</strong>
+                                        <h1 style="text-align: center;margin: 0px; font-size: 63px"><strong>NON BPJS</strong>
                                         </h1>
-                                        <a href="{{url('console/menu/pesertalama')}}" style="box-shadow: grey; font-size: 14px;">
-                                            <font color="white">Peserta Yang Telah Memiliki Rekam Medis </font>
+                                        <a href="{{url('/console/menu/nonbpjs')}}" style="box-shadow: grey; font-size: 14px;">
+                                            <font color="white">Peserta Non BPJS</font>
                                         </a>
                                     </font>
                                 </div>
@@ -95,6 +95,31 @@
                                 </div> -->
 
                               
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <!-- small box -->
+                            <div class="small-box " style="text-align: center; background-color:#7266ba; box-shadow: 6px 8px 8px #2F4F4F;">
+                                <div class="inner">
+                                    <font color="white">
+                                        <h1 style="text-align: center;margin: 0px; font-size: 63px"><strong> CHECK IN</strong>
+                                        </h1>
+                                        <a href="{{url('/console/menu/nonbpjs')}}" style="box-shadow: grey; font-size: 14px;">
+                                            <font color="white">Peserta Yang Sudah Mengambil Antrian Via Mobile JKN</font>
+                                        </a>
+                                    </font>
+                                </div>
+                                <!-- <div class="icon">
+                                    <i class="fas fa-tv"></i>
+                                </div> -->
+
+                                <div class="container-fluid">
+                                    <div class="col-sm-13 " >
+                                        <a class="btn btn-primary plus float-right  mt-4" style="border: 2px solid white; background-color:rgba(32,230,190,1); " href="{{url('console/home')}}">
+                                           <strong> Kembali </strong></a>
+                                    </div>
+                                    </div>
+                    
                             </div>
                         </div>
                         <!-- /.col-md-6 -->
@@ -107,16 +132,16 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
+       
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
         </aside>
         <!-- /.control-sidebar -->
+      
         @include('sweetalert::alert')
     </div>
     <!-- ./wrapper -->
- 
 
     <!-- REQUIRED SCRIPTS -->
 

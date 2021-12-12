@@ -2,8 +2,8 @@
 <nav class="main-header navbar navbar-expand-md navbar-light navbar-cadet blue">
     <div class="container-fluid">
 
-        <a href="/home" class="brand-link">
-            <img src="/bower_components/admin-lte/dist/img/bpjs.png" alt="AdminLTE Logo" class="brand-image"
+        <a href="{{url('/home')}}" class="brand-link">
+            <img src="{{url('')}}/bower_components/admin-lte/dist/img/bpjs.png" alt="AdminLTE Logo" class="brand-image"
                 style="opacity: 2">
 
         </a>
@@ -38,17 +38,11 @@
     <!-- Notifications Dropdown Menu -->
 
     <ul class="navbar-nav ml-auto" style="text-align: center;">
-        <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#" style="color:red;">
-                <i class="fas fa-power-off"></i>
-
+        <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
             </a>
-
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <!-- <div class="dropdown-divider"></div> -->
-                <a href="{{url('logout')}}" class="dropdown-item dropdown-footer">Logout</a>
-            </div>
-        </li>
+          </li>
     </ul>
 </nav>
 <!-- /.navbar -->

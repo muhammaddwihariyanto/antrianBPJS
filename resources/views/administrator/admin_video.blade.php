@@ -21,11 +21,11 @@
 
                 <div class="container-wrapper">
 
-
+                    <div class="card h-100" style="padding: 2%">
 
                     <form>
                         <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label" aria-required="true">Video URL(*.mp4)</label>
                             <div class="col-sm-6">
                                 <input type="email" class="form-control" id="inputEmail3">
                             </div>
@@ -42,24 +42,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Finger Print Aktif</label>
-                            <div class="col-sm-10">
-                                <div class="custom-control custom-switch custom-switch-on-success">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2"></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Link Ke PCare</label>
-                            <div class="col-sm-10">
-                                <div class="custom-control custom-switch custom-switch-on-success">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                                    <label class="custom-control-label" for="customSwitch3"></label>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group row">
                             <div class="col-sm-10" style="text-align: center;">
@@ -67,6 +50,7 @@
                             </div>
                         </div>
                     </form>
+                    </div>
 
 
                 </div>

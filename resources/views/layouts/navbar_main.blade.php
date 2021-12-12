@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand-md navbar-light navbar-cadet blue">
+<nav class="main-header navbar navbar-expand-md navbar-light navbar-cadet blue" >
     <div class="container">
         <a href="index3.html" class="brand-link">
             <img src="{{url('')}}/bower_components/admin-lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
@@ -16,7 +16,7 @@
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/home" class="nav-link">Home</a>
+                    <a href="{{url('/home')}}" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Contact</a>
@@ -35,8 +35,14 @@
         <!-- Notifications Dropdown Menu -->
     </div>
     <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
         <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#" style="color:red;">
+            {{-- <button type="button" class="btn btn-danger">Danger</button> --}}
+            <a class="btn btn-danger" data-toggle="dropdown" href="#"  style="border-radius: 40px">
                 <i class="fas fa-power-off"></i>
 
             </a>

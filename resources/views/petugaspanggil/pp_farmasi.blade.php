@@ -75,7 +75,7 @@
                                             </div>
                                             <div class="col-sm-6">                                                
                                                 <div class="panel panel-default text-center">
-                                                        <h5>NIK</h5>
+                                                        <h5>Kode Booking</h5>
                                                       
                                                         <label for=""> -- --</label>
                                                     </div>                                              
@@ -122,6 +122,7 @@
                                               
                                                     <div class="panel panel-default text-center">
                                                         <h5>Waktu Panggil</h5>
+                                                        <h3>00:00:00 WIB</h3>
                                                       
                                                         
                                                     </div>
@@ -141,7 +142,7 @@
                                 <!-- /.card -->
                                 <div class="card-header mb-0" style="text-align: center;background-image: linear-gradient(#20B2AA, #20B2AA);">
                                     <font color="white">
-                                    <h3 class="card-title-center mb-0" style="font: bold"> PETUGAS PANGGIL ADMISI</h3>
+                                    <h3 class="card-title-center mb-0" style="font: bold"> PETUGAS PANGGIL FARMASI</h3>
                                     </font>
                                 </div>
                                 <div class="card ">
@@ -202,7 +203,7 @@
                                                 {{-- <button class="btn btn-success" style="font: bold; margin-left:30%" type="submit">Panggilan Berikutnya</button> --}}
                                                 <p>
                                                    
-                                                    <a href="../updatestatuswaktupanggil/{{$antrian}}" class="btn btn-success btn-md btn-block ng-isolate-scope" style="font: bold; margin-left:20%; margin-right:10%; width:60%;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                    <a href="{{url('petugaspanggil/updatestatus')}}" class="btn btn-success btn-md btn-block ng-isolate-scope" style="font: bold; margin-left:20%; margin-right:10%; width:60%;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                                         <i class="far fa-arrow-alt-circle-right"></i>&nbsp; <strong>Panggilan Berikutnya</strong>
                                                     </a>
                                                   </p>

@@ -20,9 +20,9 @@
 
                 <div class="container-wrapper">
 
+                    <div class="card h-100" style="padding: 2%">
 
-
-                    <form class="form-inline " method="GET" action="/teller.prepaid.cari">
+                    <form class="form-inline " method="GET" action="">
                         <div class="container-fluid" style="text-align: center;">
                             Tanggal : <input name="" class="form-control mr+sm+50" type="date"
                                 placeholder="Search ID Transaksi">
@@ -74,6 +74,7 @@
                         </div>
                         <div class="pull-right">
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

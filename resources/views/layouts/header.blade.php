@@ -82,7 +82,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="fas fa-user"></i>
-                        {{ Auth::user()->name }}
+
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">

@@ -2,19 +2,34 @@
 
 <body class="hold-transition layout-top-nav">
     <div class="wrapper">
-        @include('layouts.navbar_main')
+       
         <!-- Content Wrapper. Contains page content -->
 
-        <div class="content-wrapper" style="background-color:#20B2AA;">
+        <div class="content-wrapper" style=" background-image: linear-gradient(to right,#20B2AA, #008B8B ); ">
             <!-- Content Header (Page header) -->
-
+           
+                {{-- <button type="button" class="btn btn-primary plus float-right" href="{{url('/console/home')}}" >
+                    <span data-feather="plus"></span>
+                   Kembali
+                </button> --}}
+                <div class="container-fluid">
+                <div class="col-sm-11 " >
+                    <a class="btn btn-primary plus float-right  mt-4" style="border: 2px solid white; background-color:#008B8B; " href="{{url('/console/menu/pesertalama')}}">
+                       <strong> Kembali </strong></a>
+                </div>
+                </div>
             <!-- /.content-header -->
             <br><br><br>
+            <br>
+            <br>
             <!-- Main content -->
             <!-- Main content -->
             <section class="content">
+               
                 <div class="container">
+                   
                     <div class="row">
+                        
                         <div class="col-md-4">
 
                             <!-- Profile Image -->
@@ -22,7 +37,7 @@
                             <div class="card-body box-profile">
                                 <div class="text-center">
                                     <img class="img-fluid img-circle" width="250px" height="250px"
-                                        src="{{url('')}}/bower_components/admin-lte/dist/img/avatar5.png"
+                                        src="{{url('')}}/bower_components/admin-lte/dist/img/male.png"
                                         alt="User profile picture">
                                 </div>
                                 <font color="white">
@@ -50,41 +65,42 @@
                                 </div> -->
                             <div class="container-fluid">
 
-                                <form action="#" method="post">
+                                <form action="{{route('daftarpasienbpjs')}}" method="post">
                                     {{ csrf_field() }}
                                     <br>
                                     <div class="wrap-input50 validate-input m-b-18">
-                                        <div class="row mb-3">
+                                        <div class="row mb-4">
                                             <div class="input-group">
-                                                <input type="number" name="id " class=" form-control"
+                                                <input type="number" name="nik_kartubpjs" id="nik_kartubpjs" class=" form-control"
                                                     placeholder=" NIK / NO KARTU BPJS">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="wrap-input50 validate-input m-b-18">
-                                        <div class="row mb-3">
-                                            <select name="nama_poli" id="poli" class="form-control"> --pilih Poli--
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
 
-                                                <option value="">-- Pilih Poli --</option>
-                                                @foreach ($mdpoli as $poli)
-                                                <option value="{{ $poli->NamaPoli }}">{{ $poli -> NamaPoli }}
-                                                </option>
-                                                @endforeach
-                                            </select>
+                                        <div class="wrap-input100 validate-input m-b-18">
+                                            <div class="row mb-4">
+                                                <select style="height: 38px;" name="poli" id="poli"
+                                                    class="form-control"> --pilih Poli--
+                                                    @foreach ($mdpoli as $poli)
+                                                    <option value="{{ $poli->NamaPoli }}">{{ $poli ->NamaPoli }}
+                                                    </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="wrap-input50 validate-input m-b-18">
-                                        <div class="row mb-3">
-                                            <select name="nama_dokter" id="dokter" class="form-control">
-
-                                                <option value="">-- Pilih Dokter --</option>
-                                                @foreach ($mddokter as $dokter)
-                                                <option value="{{ $dokter->NamaDokter }}">
-                                                    {{ $dokter -> NamaDokter }}
-                                                </option>
-                                                @endforeach
-                                            </select>
+                                        <div class="wrap-input100 validate-input m-b-18">
+                                            <div class="row mb-4">
+                                                <select name="dokter" id="dokter" class="form-control">
+                                                    @foreach ($mddokter as $dokter)
+                                                    <option value="{{ $dokter->nama }}">
+                                                        {{ $dokter ->nama }}
+                                                    </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <font color="white">
@@ -94,12 +110,11 @@
                                         <br>
                                         <br>
                                     </font>
-                                    <div class="wrap-input50 validate-input m-b-18">
-
-                                        <input class="btn btn-warning" type="submit" value="Daftar Antri">
-
-                                        <a class="btn btn-primary" href="/console/home">
-                                            Kembali</a>
+                                    <div class="wrap-input50 validate-input m-b-18 col-md-4">
+                                     
+                                        <input class="btn btn-warning" type="submit" value="Daftar Antri" style="border: 1px solid white; background-color:orange; text-color:white ">
+                    
+                                        
                                     </div>
                                 </form>
 
@@ -114,9 +129,7 @@
         </section>
         <!-- /.content -->
 
-    </div>
-    @include('layouts.footer_main')
-    </div>
+    
 
     <!-- ./wrapper -->
 
@@ -175,7 +188,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js">
     </script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $("#poli").select2();
     });
@@ -184,6 +197,6 @@
     $(document).ready(function() {
         $("#dokter").select2();
     });
-    </script> -->
-
+    </script>
+@include('sweetalert::alert')
 </body>
